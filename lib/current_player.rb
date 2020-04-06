@@ -1,11 +1,22 @@
+def turn_count(inputs)
+  move_count = []
+  turn.each do |unit|
+    if unit == "X" || unit == "O"
+      move_count.push(1)
+
+    end 
+  end 
+  move_count.length.to_i
+end 
+
 def current_player(board)
-  def turn_count(inputs)
-    if inputs % 2 !== 0
-      return "O"
-    else
-      return "X"
-    end
-return board
-end
+  num = turn_count(board)
+  if num % ==0
+    return "X"
+  else 
+    return "O"
+  end 
+end 
+    
 
       
