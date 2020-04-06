@@ -1,17 +1,16 @@
-def turn_count(inputs)
-  move_count = []
-  turn.each do |unit|
+def turn_count(board)
+  counter = 0
+  board.each do |unit|
     if unit == "X" || unit == "O"
-      move_count.push(1)
-
+      counter += 1
     end
   end
-  move_count.length.to_i
-end
+  counter 
+end 
 
 def current_player(board)
   num = turn_count(board)
-  if num % ==0
+  if num % == 0
     return "X"
   else
     return "O"
