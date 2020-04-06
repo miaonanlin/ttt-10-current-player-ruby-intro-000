@@ -15,3 +15,5 @@ def current_player(board)
     return "O"
   end
 end
+# I can do  turn_count(board) % 2 == 0? "X": "O"
+# or turn_count(board).even? "X": "O"
