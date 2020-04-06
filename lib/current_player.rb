@@ -1,11 +1,11 @@
-def current_player(board) 
+def current_player(board)
   def turn_count(inputs)
     if inputs % 2 !== 0
       return "O"
-    else 
+    else
       return "X"
-    end 
-return board 
-end 
-      
+    end
+return board
+end
+
       
